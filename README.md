@@ -45,19 +45,28 @@ won't start to move until the first one has finished moving.
 OUTPUT
 The output for each rover should be its final co-ordinates and heading.
 
-INPUT AND OUTPUT
-
 Test Input:
+
+```
 5 5
 1 2 N
 LMLMLMLMM
 3 3 E
 MMRMMRMRRM
+```
 
 Expected Output:
+
+```
 1 3 N
 5 1 E
+```
 
 ## Run it
 Just run the main file with Ruby 1.9 or later.
 `ruby mission.rb`
+
+## Running tests
+Just bundle install for `rspec`
+
+then run `rspec specs/<spec_name>.rb`
