@@ -8,6 +8,7 @@ class Rover
   }
   
   def initialize(coordinate_string, plateau=nil)
+    FormatValidator.rover_location(coordinate_string)
     coordinate_array = coordinate_string.split
     @x       = coordinate_array[0].to_i
     @y       = coordinate_array[1].to_i
@@ -24,6 +25,7 @@ class Rover
   end
 
   def follow_directions(direction_string)
+    FormatValidator.rover_command(direction_string)
     direction_string.downcase!
     direction_string.split('').each do |command|
       case command

@@ -47,5 +47,5 @@ alien = <<'eos'
 
 eos
 
-puts "Great, we got some cool photos of mars, here is the most ineteresting one."
+puts "Great, we got some cool photos of mars, here is the most interesting one."
 puts alien

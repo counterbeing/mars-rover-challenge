@@ -1,6 +1,8 @@
+require './classes/format_validator.rb'
 class Plateau
   attr_accessor :x, :y
   def initialize(coordinate_string)
+    FormatValidator.plateau_dimensions(coordinate_string)
     coordinate_array = coordinate_string.split()
     @x = coordinate_array[0].to_i
     @y = coordinate_array[1].to_i
