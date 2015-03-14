@@ -69,4 +69,4 @@ Just run the main file with Ruby 1.9 or later.
 ## Running tests
 Just bundle install for `rspec`
 
-then run `rspec specs/<spec_name>.rb`
+then run `rspec specs/*`
